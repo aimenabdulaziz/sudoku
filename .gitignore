@@ -1,0 +1,8 @@
+create
+solve
+sudoku
+unittest
+fuzzSudoku
+sudoku-gui/venv/
+*.o
+*.dSYM
