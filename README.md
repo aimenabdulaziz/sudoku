@@ -1,18 +1,18 @@
 # CS50 Spring 2022, Sudoku
 
-## Koding Kegs
-Aimen Abdulaziz -> aimenabdulaziz
+Members:
+- Aimen Abdulaziz -> aimenabdulaziz
 
-Chibuzo Chiwike -> hack-heart
+- Chibuzo Chiwike -> hack-heart
 
-Cristian Antonio-Santiago -> Cristian Antonio-Santiago
+- Cristian Antonio-Santiago -> Cristian Antonio-Santiago
 
-Dara Casey -> caseydara
+- Dara Casey -> caseydara
 
 Sudoku is a standalone program that can be called with two commands. If the command is `create`, then it creates a random sudoku with between 25 and 40 filled cells. If the command is `solve`, then it reads a sudoku from `stdin` and prints the solution to `stdout`, along with a message that contains the number of solutions.
 
 ## Usage
-`./sudoku command` where command is `solve` or `create`
+`./sudoku command`, where `command` is `solve` or `create`
 
 ## Assumptions
 Specific assumptions are included in the file headings, but here are a few.
@@ -53,15 +53,15 @@ The reader for `Sudoku Solver` is dynamic. It can read files in any format (with
 
 
 ## Compilation
-To compile `sudoku`, `fuzzSudoku`, `create`, or `solve`, run `make` or `make all`.
+To compile `sudoku`, `fuzzSudoku`, `create`, and `solve`, run `make` or `make all`.
 
-To compile only one program, run `make program`, where program is the name of the program.
+To compile only one program, run `make program`, where `program` is the name of the specific program you want to compile.
 
-Run tests with `make test`. See `TESTING.md` for more details.
+Run tests with `make test`. See `TESTING.md` for more details about all the testings we have performed.
 
-To test `sudoku` valgrind, run `make valgrind`. We have added a test case in the `Makefile`, but feel free to modify that and test with your preferred test case.
+To test `sudoku` for memory leak, run `make valgrind`. We have added a test case in the `Makefile`, but feel free to modify that and test with your preferred test case.
 
-To clean all the files created during compilation and testing, run `make clean`.
+To clean up all the files created during compilation and testing, run `make clean`.
 
 ## Extra credit
 A GUI that shows how our algorithm runs by showing the state of the board. Written in python.
@@ -69,3 +69,31 @@ A GUI that shows how our algorithm runs by showing the state of the board. Writt
 ## Notes
 - The `tests` folder contains files needed to run the test script.
 - The sudoku-gui folder contains python code for displaying a GUI. See that folder's README for more.
+
+## Task Assignment
+Aimen:
+- `solve.c` including unit test for sudoku solver
+- `solve.h`
+- `sudoku.c` loosely based on Cristian's initial implementation
+- `Makefile` with considerable help from Chibuzo
+- `TESTING.md` except for fuzz test
+- `testing.sh` except for fuzz test
+- `README.md`
+
+Chibuzo:
+- `sudoku-gui`
+- `fuzzSudoku`
+- `README.md`
+- `Makefile` with considerable help from Aimen
+
+Cristian:
+- `DESIGN.md`
+- `IMPLEMENTATION.md`
+- `README.md`
+- `sudoku.c` which was later replaced by Aimen's implementation
+
+Dara: 
+- `create.c` including unit test for creator with considerable help from Chibuzo
+- `create.h`
+
+

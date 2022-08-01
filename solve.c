@@ -202,7 +202,7 @@ void printResult(int sudoku[SIZE][SIZE])
  */
 int main(int argc, char const *argv[])
 {   
-    // valid sudoku with 2 or more solution
+    // valid sudoku with multiple solutions
     printf("test 1\n");
     int sudoku[9][9] = {0}; // 9 by 9 sudoku with all values set to 0
     printResult(sudoku); 
@@ -254,7 +254,7 @@ int main(int argc, char const *argv[])
     };
     printResult(sudoku4); 
     
-    // sudoku multiple solutions
+    // valid sudoku with multiple solutions
     printf("test 5\n");
     int sudoku5[9][9] = {
         {2, 9, 5, 7, 4, 3, 8, 6, 1},
